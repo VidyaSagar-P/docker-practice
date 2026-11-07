@@ -9,22 +9,22 @@ volumes:
 
 services:
   catalogue:
-    image: catalogue:v1
+    image: vidya07422/catalogue:v1
     container_name: catalogue
-    environment:
-      MONGO_URL: "mongodb://mongodb:27017/catalogue"
-      MONGO: true
+    # environment:
+    #   MONGO_URL: "mongodb://mongodb:27017/catalogue"
+    #   MONGO: true
     depends_on:
       - mongodb
   
   mongodb:
-    image: mongodb:v1
+    image: vidya07422/mongodb:v1
     container_name: mongodb
     volumes:
       - mongodb:/data/db
 
   frontend:
-    image: frontend:v1
+    image: vidya07422/frontend:v1
     container_name: frontend
     ports:
       - 80:80
