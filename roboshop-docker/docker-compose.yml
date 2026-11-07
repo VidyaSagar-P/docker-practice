@@ -11,7 +11,6 @@ services:
   catalogue:
     image: catalogue:v1
     container_name: catalogue
-    name: catalogue
     environment:
       MONGO_URL: mongodb://mongodb:27017/catalogue
       MONGO: true
