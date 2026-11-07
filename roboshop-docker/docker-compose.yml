@@ -9,6 +9,7 @@ volumes:
 
 services:
   catalogue:
+    build: ./catalogue
     image: catalogue:v1
     container_name: catalogue
     environment:
@@ -18,12 +19,14 @@ services:
       - mongodb
   
   mongodb:
+    build: ./mongodb
     image: mongodb:v1
     container_name: mongodb
     volumes:
       - mongodb:/data/db
 
   frontend:
+    build: ./frontend
     image: frontend:v1
     container_name: frontend
     ports:
