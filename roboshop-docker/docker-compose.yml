@@ -12,7 +12,7 @@ services:
     image: catalogue:v1
     container_name: catalogue
     environment:
-      MONGO_URL: mongodb://mongodb:27017/catalogue
+      MONGO_URL: "mongodb://mongodb:27017/catalogue"
       MONGO: true
     depends_on:
       - mongodb
