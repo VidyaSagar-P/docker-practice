@@ -40,8 +40,8 @@ spec:
       - name: mysql
         image: vidya07422/mysql:v1
         envFrom:
-        - secretRef: mysql
-      
+        - secretRef: 
+            name: mysql     
 ---
 apiVersion: v1
 kind: Service
