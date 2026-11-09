@@ -1,0 +1,11 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: roboshop
+  region: us-east-1
+
+managedNodeGroups:
+  - name: roboshop
+    instanceTypes: ["m7i-flex.large"] 
+    desiredCapacity: 2
+    spot: true
