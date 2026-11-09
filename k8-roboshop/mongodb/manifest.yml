@@ -9,7 +9,7 @@ metadata:
     tier: database
 
 spec:
-  replica: 1
+  replicas: 1
   selector:
     matchLabels:
       component: mongodb
