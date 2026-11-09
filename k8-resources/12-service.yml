@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: default-Service
+  labels:
+    purpose: practice-default-Service
+
+spec:
+  selector:
+  # take the reference lables
+    project: roboshop
+    purpose: labels
+  ports:
+    - protocol:
+      port: 
+      targetPort: 
