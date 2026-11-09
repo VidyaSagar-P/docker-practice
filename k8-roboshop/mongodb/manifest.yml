@@ -11,7 +11,7 @@ metadata:
 spec:
   replica: 1
   selector:
-    matchLabel:
+    matchLabels:
       component: mongodb
       project: roboshop
       tier: database
