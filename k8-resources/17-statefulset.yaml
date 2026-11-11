@@ -37,9 +37,8 @@ metadata:
 spec:
   selector:
     matchLabels:
-      labels:
-        purpose: headless
-        project: roboshop
+      purpose: headless
+      project: roboshop
   replicas: 3 # by default is 1
   template:
     metadata:
